@@ -17,13 +17,14 @@ export const AuroraBackground = ({
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
         className={cn(
-          "transition-bg relative flex min-h-screen flex-col items-center justify-center bg-zinc-50 text-slate-950 dark:bg-zinc-900",
+          "transition-bg relative min-h-screen w-full flex flex-col bg-zinc-50 text-slate-950 dark:bg-zinc-900",
           className
         )}
         {...props}
       >
+        {/* Aurora background */}
         <div
-          className="absolute inset-0 overflow-hidden"
+          className="absolute inset-0 overflow-hidden -z-10"
           style={{
             "--aurora":
               "repeating-linear-gradient(100deg,#3b82f6_10%,#a5b4fc_15%,#93c5fd_20%,#ddd6fe_25%,#60a5fa_30%)",
@@ -50,7 +51,7 @@ export const AuroraBackground = ({
           ></div>
         </div>
 
-        {/* Page content (e.g. NavBar + children) */}
+        {/* Children content flows top-down */}
         {children}
       </motion.div>
     </main>
