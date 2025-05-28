@@ -22,7 +22,7 @@ const NavBar = () => {
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className='flex justify-between items-center w-full absolute top-0 p-4 bg-white shadow-md z-50'
+      className='flex justify-between items-center w-full absolute top-0 p-4 bg-white/70 backdrop-blur-md shadow-md z-50'
     >
       <div className='text-xl font-extrabold text-blue-600'>Adeboss</div>
       <ul className='flex gap-6 list-none'>
