@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
+    
     <AuroraBackground>
       <NavBar />
       <div className="pt-32 px-8 text-center">
