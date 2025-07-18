@@ -14,7 +14,7 @@ export default function Home() {
           transition={{ delay: 0.8, duration: 0.6 }}
           className="text-4xl font-bold text-gray-800 dark:text-gray-200"
         >
-          Welcome Home
+          Welcome Home FAMZ
         </motion.h3>
       </div>
     </AuroraBackground>
